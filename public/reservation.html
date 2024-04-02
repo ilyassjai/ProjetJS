@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/reservation.css" />
+    <title>Réserver votre maison</title>
+  </head>
+
+  <body>
+    <div>
+      <navbar class="nav">
+        <a class="home-logo" href="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </a>
+        <div class="nav-items">
+            <a href="index.php">À propos</a>
+            <a href="about.php">Contact</a>
+            <a href="contact.php">Se connecter</a>
+        </div>
+    </navbar>
+      <main>
+        <section class="house-map">
+          <div class="house-container">
+            <div class="house-image">
+              <img src="/images/house-5.jpg" id="house-img" alt="house" />
+            </div>
+            <div class="house-details">
+              <div class="detail-item">
+                <img src="/images/epingle.png" id="icon" alt="star" />
+                <p id="address">Address</p>
+              </div>
+              <div class="detail-item">
+                <img src="/images/lit.png" id="icon" alt="star" />
+                <p id="beds">Num of Beds</p>
+              </div>
+              <div class="detail-item">
+                <img src="/images/icons8-room-30.png" id="icon" alt="star" />
+
+                <p id="rooms">Num of Rooms</p>
+              </div>
+              <div class="detail-item">
+                <img src="/images/epingles.png" id="icon" alt="star" />
+
+                <p id="distance">Distance to downtown</p>
+              </div>
+              <div class="detail-item">
+                <img src="/images/etiquette-de-prix.png" id="icon" alt="star" />
+                <p id="price">Price</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-container" id="map">
+            <div class="house-info">
+              <div class="house-info-header">
+                <h1 class="house-title">
+                  A beautiful villa on the coast of france
+                </h1>
+                <div class="house-rating">
+                  <img
+                    src="/images/star.svg
+                "
+                    alt="star"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-container" id="reviews">
+           
+              <!-- Add more reviews here -->
+          </div>
+
+          <div class="form-container">
+            <!-- Form with nom, prénom, email, date début, date fin -->
+            <h1 class="form-title">Réservez ce bien</h1>
+            <form class="form" method="post" action="/confirmation">
+              <input type="hidden" id="id" name="id">
+              <div class="form-item">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" required />
+              </div>
+              <div class="form-item">
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" required />
+              </div>
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-item">
+                <label for="number">Numéro</label>
+                <input type="text" name="telephone" id="telephone" required />
+              </div>
+              <div class="form-item">
+                <label for="dateDebut">Date de début</label>
+                <input type="date" name="dateDebut" id="date-debut" required />
+              </div>
+              <div class="form-item">
+                <label for="dateFin">Date de fin</label>
+                <input type="date" name="dateFin" id="date-fin" required />
+              </div>
+              <input type="hidden" name="address1" id="address1"/>
+              <input type="hidden" name="price1" id="price1"/>
+              <div class="form-item">
+                <input type="submit" value="Réserver" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="company-name">© HomeFinder Inc. Tous droits réservés.</p>
+        <nav class="footer-nav">
+          <a class="fnav-item" href="#">
+            À propos de nous
+          </a>
+          <a class="fnav-item" href="#">
+            Contact
+          </a>
+          <a class="fnav-item" href="#">
+            Conditions d'utilisation
+          </a>
+        </nav>
+      </footer>
+    </div>
+    <script src="/public/main.js"></script>
+    <script src="/maps"></script>
+  </body>
+</html>

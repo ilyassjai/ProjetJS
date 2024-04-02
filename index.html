@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>HouseFinder</title>
+</head>
+<body>
+    <navbar class="nav">
+        <a class="home-logo" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </a>
+        <div class="nav-items">
+            <a href="index.php">À propos</a>
+            <a href="about.php">Contact</a>
+            <a href="contact.php">Se connecter</a>
+        </div>
+    </navbar>
+    <main class="app-container">
+        <section class="hero-section">
+            <img src="images/back.jpg" alt="background" >
+            <div class="search-container">
+                <div class="search-box">
+                    <form class= "search-box" id="search-box" method="post" action="/search">
+                        <input type="text" name="ville" placeholder="Ville">
+                        <input required type="date" name="dateDebut" placeholder="Date d'entrée">
+                        <input required type="date" name="dateFin" placeholder="Date de sortie">
+                        <input type="number" name="maxPrice" placeholder="Prix max">
+                        <input type="number" name="numChambres" placeholder="Nombre de chambres">
+                        <input type="number" name="numCouchage" placeholder="Nombre de lits">
+                        <input type="number" name="distance" placeholder="Distance du centre ville">
+                        <button id="searchBtn" type="submit" name="submit-search">Rechercher</button>
+                    </form>
+                </div>
+    
+            </div>
+
+            <div class="app-title">
+                <h1>Trouvez votre maison parfaite</h1>
+                <h4>Explorez des milliers de propriétés du bout des doigts</h4>
+            </div>
+        </section>
+        <section class="properties-section">
+            <div class="product-info">
+                <h2 class="product-title">
+                    Propriétés en vedette
+                </h2>
+    
+                <a href="/" id="explore" class="product-btn">
+                    Tout explorer
+                    <img src="./images/arrow.svg" alt="">
+                </a>
+            </div>
+            <div class="properties-container" id="container">
+               
+
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="testimonials">
+              <h2 class="title">Témoignages</h2>
+              <div class="testimonials-container">
+                <div>
+                  <img
+                    class="user-img"
+                    alt="Image utilisateur"
+                    src="images/person-3.jpg"
+                  ></img>
+                  <p class="quote">"Excellent service ! J'ai trouvé la maison parfaite pour mes vacances."</p>
+                  <p class="user-name">- John Doe</p>
+                </div>
+                <div>
+                  <img
+                    class="user-img"
+                    alt="Image utilisateur"
+                    src="images/person-2.jpg"
+                  ></img>
+                  <p class="quote">"Expérience de réservation sans faille. Je recommande vivement !"</p>
+                  <p class="user-name">- Jane Smith</p>
+                </div>
+                <div>
+                  <img
+                    class="user-img"
+                    alt="Image utilisateur"
+                    src="images/person-1.jpg"
+                  ></img>
+                  <p class="quote">"Large choix de propriétés. J'ai trouvé exactement ce que je cherchais."</p>
+                  <p class="user-name">- Mary Johnson</p>
+                </div>
+              </div>
+            </div>
+          </section>
+     </main>
+        <footer class="footer">
+          <p class="company-name">© HomeFinder Inc. Tous droits réservés.</p>
+          <nav class="footer-nav">
+            <a class="fnav-item" href="#">
+              À propos de nous
+            </a>
+            <a class="fnav-item" href="#">
+              Contact
+            </a>
+            <a class="fnav-item" href="#">
+              Conditions d'utilisation
+            </a>
+          </nav>
+        </footer>
+
+
+        
+       
+    </main>
+</body>
+<script src="public/main.js"></script>
+</html>

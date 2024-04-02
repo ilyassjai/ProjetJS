@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Consolas', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #eee;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .nav a:hover {
+    color: #333;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+  }
+
+
+.confirmation-container {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem; 
+}
+
+.review-form-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.confirmation-info {
+    grid-column: span 2;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.confirmation-info img {
+    height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .confirmation-container {
+        grid-template-columns: 1fr;
+        font-size: 16px;
+    }
+
+    .confirmation-info {
+        grid-column: span 1;
+    
+    }
+    
+}
+
+
+
+.review-form-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review-form-container h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.review-form input[type="text"] {
+    width: auto;
+    min-height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer .company-name {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-nav .fnav-item {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+  }

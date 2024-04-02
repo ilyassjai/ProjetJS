@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/confirmation.css">
+    <title>Réservation confirmé</title>
+</head>
+<body>
+  <navbar class="nav">
+    <a class="home-logo" href="/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+      </a>
+    <div class="nav-items">
+        <a href="index.php">À propos</a>
+        <a href="about.php">Contact</a>
+        <a href="contact.php">Se connecter</a>
+    </div>
+</navbar>
+<main>
+    <div class="confirmation-container">
+        <div class="confirmation-info">
+            <img src="/images/check.svg" alt="confirmation">
+            <h1>Réservation confirmé!</h1>       
+        </div>
+        <div class="review-form-container">
+            <h2 id="remerciements">Merci pour votre réservation, </h2>
+            <h3>Vérifiez votre email pour la confirmation</h3>
+            <h3 id="avis">Laissez un avis !</h3>
+            <form id="form" class="review-form" method="post" action="\avis">
+                <input type="text" name="review" placeholder="Write a review">
+                <button type="submit" name="submit-review">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</main>
+<footer class="footer">
+  <p class="company-name">© HomeFinder Inc. Tous droits réservés.</p>
+  <nav class="footer-nav">
+    <a class="fnav-item" href="#">
+      À propos de nous
+    </a>
+    <a class="fnav-item" href="#">
+      Contact
+    </a>
+    <a class="fnav-item" href="#">
+      Conditions d'utilisation
+    </a>
+  </nav>
+</footer>
+<script src="/public/main.js"></script>
+</body>
+</html>
